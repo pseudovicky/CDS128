@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+/* Resetting default styles and setting global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    scrollbar-width: none;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* Navbar styling */
+nav{
+    height: 5rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}

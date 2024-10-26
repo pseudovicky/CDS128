@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul></ul>
-        </nav>
-    </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduMeet</title>
+    <link rel="stylesheet" href="styles\style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.14/dist/lenis.css"
+    /> -->
+    <style>
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+
+      .lenis.lenis-smooth iframe {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <div id="nav-part1">
+        <h1>EduMeet</h1>
+      </div>
+      <div id="nav-part2">
+        <h4>Home</h4>
+        <h4>About</h4>
+        <h4>Support</h4>
+      </div>
+    </nav>
+    <!-- Don't Touch These Script Files -->
+    <!-- Smooth Scrolling JS CDN -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="script\script.js"></script>
+  </body>
 </html>
