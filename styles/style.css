@@ -46,7 +46,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 1.45rem;
     margin-right: 3rem;
 }
 
@@ -55,4 +55,17 @@ html {
     font-weight: 500;
     text-transform: uppercase;
     font-family: "Spotify-Regular";
+}
+#nav h4 a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+#nav h4 a:nth-last-child(){
+    background-color: red;
+    border-radius: .25rem;
+    padding: 1rem;
+}
+#nav h4 a:hover{
+    color: tomato;
+    border-bottom: 2px solid tomato;
 }
