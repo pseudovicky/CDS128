@@ -1,5 +1,5 @@
 const lenis = new Lenis({
-    lerp:.07,
+    lerp:.04,
 });
 
 function raf(time) {
