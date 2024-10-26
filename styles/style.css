@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
+    font-family: "Space Grotesk", serif;
 }
 
 body,
@@ -14,13 +15,6 @@ html {
     width: 100%;
     scrollbar-width: none;
 }
-
-/* Main container styling */
-/* .main {
-    background-color: #000000;
-    margin-bottom: 4rem;
-    cursor: default;
-} */
 
 /* Navbar styling */
 #nav {
@@ -31,15 +25,13 @@ html {
     justify-content: space-between;
     padding: 0 1.875rem;
     position: fixed;
-    mix-blend-mode: difference;
-    z-index: 99;
+    z-index: 1000;
     background-color: black;
 }
 
 #nav h1 {
     font-weight: 500;
     font-size: 1.75rem;
-    font-family: "Spotify-Regular";
 }
 
 #nav-part2 {
@@ -54,18 +46,116 @@ html {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
-    font-family: "Spotify-Regular";
 }
-#nav h4 a{
+
+#nav h4 a {
     text-decoration: none;
     transition: all 0.4s ease;
 }
-#nav h4 a:nth-last-child(){
+
+#nav h4 a:nth-last-child() {
     background-color: red;
     border-radius: .25rem;
     padding: 1rem;
 }
-#nav h4 a:hover{
+
+#nav h4 a:hover {
     color: tomato;
     border-bottom: 2px solid tomato;
+}
+
+/* Page 1 Style  */
+.page1 {
+    min-height: 100vh;
+    top: 4.688rem;
+    background: linear-gradient(61deg, #403DF4 0.57%, rgba(64, 61, 244, 0.70) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5rem;
+    margin-bottom: 4vw;
+}
+
+.page1 .main-text h1 {
+    text-align: left;
+    font-size: 5rem;
+}
+
+.page1 .main-text p {
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.page1 .main-text .btns-main {
+    gap: 1.25rem;
+}
+
+.page1 .main-text .btns-main .btn-re {
+    border: none;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    border-radius: 5rem;
+    border: 1px solid #000;
+}
+
+.page1 .main-text .btns-main .btn-re a {
+    text-decoration: none;
+    color: #000;
+}
+.page1 .main-text .btns-main .btn-re:hover{
+    background-color: black;
+    color: #fff;
+}
+.page1 .main-text .btns-main .btn-re a:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/* Page 2 Style */
+.page2 {
+    min-height: 100vh;
+    /* width: 80%; */
+    background-color: #403DF4;
+    padding: 5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.page2 .image2 .re-img {
+    height: 420px;
+}
+
+.content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    width: 50%;
+    position: relative;
+}
+
+.content .blur-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.content .blur-text p {
+    font-size: 1.25rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+.content .blur-text .df-btn {
+    font-size: 1.25rem;
+    padding: .75rem 3rem;
+    margin-top: 2rem;
+    border: 1px solid #000;
+    border-radius: 1.5rem;
+}
+
+.content .blur-text .df-btn a {
+    text-decoration: none;
+    color: black;
 }
