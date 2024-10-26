@@ -16,6 +16,11 @@ html {
     scrollbar-width: none;
 }
 
+main {
+    height: 100%;
+    width: 100%;
+}
+
 /* Navbar styling */
 #nav {
     height: 4.688rem;
@@ -26,7 +31,7 @@ html {
     padding: 0 1.875rem;
     position: fixed;
     z-index: 1000;
-    background-color: black;
+    /* background-color: black; */
 }
 
 #nav h1 {
@@ -43,21 +48,22 @@ html {
 }
 
 #nav h4 {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 #nav h4 a {
+
     text-decoration: none;
     transition: all 0.4s ease;
 }
 
-#nav h4 a:nth-last-child() {
-    background-color: red;
-    border-radius: .25rem;
-    padding: 1rem;
-}
+/* #nav .nav-part2 .nav-btn a {
+    background-color: rgba(0, 0, 0, 0.532);
+    padding: .5rem;
+} */
+
 
 #nav h4 a:hover {
     color: tomato;
@@ -67,14 +73,12 @@ html {
 /* Page 1 Style  */
 .page1 {
     min-height: 100vh;
-    top: 4.688rem;
-    background: linear-gradient(61deg, #403DF4 0.57%, rgba(64, 61, 244, 0.70) 100%);
+    background: linear-gradient(rgb(41, 192, 215), rgb(0, 110, 255));
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 5rem;
-    margin-bottom: 4vw;
+    padding: 8vw;
 }
 
 .page1 .main-text h1 {
@@ -87,37 +91,27 @@ html {
     font-size: 1.25rem;
 }
 
-.page1 .main-text .btns-main {
-    gap: 1.25rem;
+.main-text .btns-main .btn-re {
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    margin-right: .75rem;
+    border-radius: 2rem;
+    border:1px solid rgb(0, 110, 255);
+    transition: all 0.3s ease-in-out;
 }
 
-.page1 .main-text .btns-main .btn-re {
-    border: none;
-    margin-top: 1.5rem;
-    font-size: 1.25rem;
-    padding: .75rem 1rem;
-    border-radius: 5rem;
-    border: 1px solid #000;
-}
-
-.page1 .main-text .btns-main .btn-re a {
+.main-text .btns-main .btn-re a{
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    color: #000;
+    font-size: 1.1rem;
 }
-.page1 .main-text .btns-main .btn-re:hover{
-    background-color: black;
-    color: #fff;
-}
-.page1 .main-text .btns-main .btn-re a:hover{
-    background-color: black;
-    color: #fff;
-}
+
 
 /* Page 2 Style */
 .page2 {
     min-height: 100vh;
     /* width: 80%; */
-    background-color: #403DF4;
+    background-color: #F1F0F5;
     padding: 5rem 5rem;
     display: flex;
     align-items: center;
@@ -130,7 +124,6 @@ html {
 }
 
 .content {
-    color: black;
     display: flex;
     flex-direction: column;
     gap: 20vh;
@@ -141,9 +134,12 @@ html {
 .content .blur-text h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    color: black;
 }
+
 .content .blur-text p {
     font-size: 1.25rem;
+    color: black;
     /* margin-bottom: 1.5rem; */
 }
 
@@ -151,7 +147,7 @@ html {
     font-size: 1.25rem;
     padding: .75rem 3rem;
     margin-top: 2rem;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 1.5rem;
 }
 
