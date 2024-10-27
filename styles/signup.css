@@ -118,6 +118,7 @@ body {
 
   .flex-item:nth-child(1) {
     color: #fff;
+    width: 70%;
   }
 
   .flex-item:nth-child(2) {
@@ -125,7 +126,7 @@ body {
   }
   
   header, main,  footer  {
-    width: min(86%, 90rem);
+    width: min(80%, 90rem);
     margin: auto;
   }
   
@@ -179,6 +180,8 @@ body {
 
   header#login {
     padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   .forgot-password-link {
