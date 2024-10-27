@@ -1,5 +1,5 @@
 const lenis = new Lenis({
-  lerp: 0.04,
+  lerp: 0.03,
 });
 
 function raf(time) {
@@ -45,3 +45,13 @@ for (let i = 0; i < link.length; i++) {
 
 // chatbot
 
+//SheryJS Code For 3D Image Effect
+Shery.mouseFollower();
+Shery.imageEffect(".image", {
+  style: 2, //Select Style
+  debug: true, // Debug Panel
+  config: {
+    /* Config made from debug panel */
+  },
+  preset: "./presets/wigglewobble.json",
+});
