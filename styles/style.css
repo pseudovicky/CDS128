@@ -106,6 +106,14 @@ main {
     font-size: 1.1rem;
 }
 
+.main-text .btns-main .btn-re:hover {
+    background: transparent;
+    border:1px solid #fff !important;
+    color: #fff;
+}
+.main-text .btns-main .btn-re:hover a {
+    color: #fff;
+}
 
 /* Page 2 Style */
 .page2 {
@@ -151,9 +159,17 @@ main {
     border-radius: 1.5rem;
 }
 
+.content .blur-text .df-btn:hover {
+    background: black;
+}
+
 .content .blur-text .df-btn a {
     text-decoration: none;
     color: black;
+}
+
+.content .blur-text .df-btn:hover a {
+    color: #fff;
 }
 
 
