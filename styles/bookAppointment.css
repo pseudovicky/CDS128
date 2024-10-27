@@ -5,22 +5,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Grotesk", serif;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
+    background: linear-gradient(rgb(41, 192, 215), rgb(0, 110, 255));
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-  }
+}
+
 a {
     text-decoration: none;
 }
- .back-button{
+
+.back-button {
     /* height: 25px; */
     color: white;
     /* font-weight: 500; */
@@ -33,15 +36,18 @@ a {
     border-radius: 2rem;
     font-size: 1.5rem;
 }
- .profile-image{
+
+.profile-image {
     text-decoration: none;
     height: 40px;
     border-radius: 50%;
 }
+
 main {
     height: 100vh;
     width: 100%;
 }
+
 main .main-container {
     min-height: 100vh;
     width: 100%;
@@ -51,28 +57,59 @@ main .main-container {
     align-items: center;
     justify-content: space-between;
 }
-.image-sect, .text-sect{
+
+.image-sect,
+.text-sect {
     width: 80%;
     display: flex;
 }
-.text-sect, h2{
+
+.text-sect,
+h2 {
+    color: white;
+    font-size: 2.25rem;
     display: flex;
     flex-direction: column;
-} 
-.btn-grp{
-    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-sect p {
+    font-size: 1.2rem;
+}
+
+.btn-grp {
+    margin-top: 1.2rem;
     gap: 1rem;
 }
-.btn-grp, .link-btn{
+
+.btn-grp,
+.link-btn {
     display: flex;
     flex-direction: row;
 }
+
+.link-btn button {
+    color: yellow;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 0);
+    transition: all .3s ease-in;
+}
+.link-btn button:hover {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+
 .link-btn>button {
+    font-size: 1.25rem;
     padding: .5rem 1.25rem;
     border-radius: 2rem;
     background: transparent;
     border: 2px soild black;
 }
-.image-sect, .imgSect{
+
+.image-sect,
+.imgSect {
     height: 38vw;
 }
