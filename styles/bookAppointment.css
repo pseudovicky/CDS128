@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+a {
+    text-decoration: none;
+}
+ .back-button{
+    /* height: 25px; */
+    color: white;
+    /* font-weight: 500; */
+    background-color: black;
+    padding: .05rem 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+ .profile-image{
+    text-decoration: none;
+    height: 40px;
+    border-radius: 50%;
+}
+main {
+    height: 100vh;
+    width: 100%;
+}
+main .main-container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 3rem 4rem;
+    gap: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.image-sect, .text-sect{
+    width: 80%;
+    display: flex;
+}
+.text-sect, h2{
+    display: flex;
+    flex-direction: column;
+} 
+.btn-grp{
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.btn-grp, .link-btn{
+    display: flex;
+    flex-direction: row;
+}
+.link-btn>button {
+    padding: .5rem 1.25rem;
+    border-radius: 2rem;
+    background: transparent;
+    border: 2px soild black;
+}
+.image-sect, .imgSect{
+    height: 38vw;
+}
