@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 /* Resetting default styles and setting global styles */
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
     font-family: "Space Grotesk", serif;
 }
 
@@ -22,6 +21,10 @@ main {
     width: 100%;
 }
 
+#nav, .page1 .main-text h1, .main-text p {
+    color: #fff;
+}
+
 /* Navbar styling */
 #nav {
     height: 4.688rem;
@@ -32,7 +35,6 @@ main {
     padding: 0 1.875rem;
     position: fixed;
     z-index: 1000;
-    /* background-color: black; */
 }
 
 #nav h1 {
@@ -63,11 +65,6 @@ main {
     text-decoration: none;
     transition: all 0.4s ease;
 }
-
-/* #nav .nav-part2 .nav-btn a {
-    background-color: rgba(0, 0, 0, 0.532);
-    padding: .5rem;
-} */
 
 
 #nav h4 a:hover, #footer a:hover {

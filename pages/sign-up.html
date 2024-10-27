@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body id="body-sign-up">
+    <header class="sign-up-header">
+        <div class="container flexbox jc-sb ai-c">
+            <a href="../index.html" class="logo-link"><img id="logo-img" src="../assets/Logo.svg" alt="Alumni Connect logo"></a>
+            <a href="../index.html" id="back-btn" class="flexbox bg-fff"><img src="../assets/Back Arrow.svg" alt="back arrow icon"></a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex-item flx-item1">
+                <h1>Connect to your personalized Alumni</h1>
+                <p class="sign-up" id="resources"><strong>Over 20 resources. </strong>With resources ranging from LinkedIn to top notch platforms, we've got all your needs covered.</p>
+                <p class="sign-up" id="deliver"><strong>Delivered weekly. </strong>Every week at exactly Tuesday 12:00 P.M. EST &mdash; expect a value-packed digest right in your email.</>
+                <p class="sign-up" id="ideas"><strong>Unlimited ideas. </strong>With all the ideas you'll be reading about, what's stopping you from landing a job?</p>
+            </div>
+            <form action="" class="flex-item flex-item2 bg-fff">
+                <h2 class="sign-up">Create your Alumni Connect Account</h2>
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                <label for="name"><strong>Full Name</strong></label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" id="password" placeholder="At least 8 characters" required>
+                <div class="terms-container flexbox">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">By creating an account on Alumni Connect, you agree to the <strong><a href="" class="terms-link">Terms & Conditions</a></strong>.</label>
+                </div>
+                <button class="cta" type="submit">Create an Account</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
