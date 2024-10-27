@@ -61,7 +61,7 @@ main {
 }
 
 #nav h4 a {
-
+    color: #fff;
     text-decoration: none;
     transition: all 0.4s ease;
 }
