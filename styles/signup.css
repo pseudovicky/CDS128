@@ -50,6 +50,7 @@ label {
 }
 
 label[for=terms] {
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
@@ -84,7 +85,7 @@ button.cta {
 }
 
 #back-btn {
-    padding-inline: 14px;
+    padding-inline: 1.125rem;
     border: 1px solid #cccc;
     border-radius: .25rem;
     align-self: stretch;
@@ -94,7 +95,7 @@ button.cta {
 
 body {
     margin: 0;
-    min-width: 20rem;
+    min-width: 20rem; 
     min-height: 100vh;
     position: relative;
     /* optimizes text rendering speed but affects legibility  */
@@ -118,6 +119,10 @@ body {
 
   .flex-item:nth-child(1) {
     color: #fff;
+    max-width: 31.25rem;
+  }
+  .flex-item:nth-child(2) {
+    max-width: 31.25rem;
   }
   
   header, main,  footer  {
