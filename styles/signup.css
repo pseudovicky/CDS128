@@ -71,7 +71,6 @@ input {
 }
 .terms-link {
     text-decoration: underline;
-    color: var(--purple);
 }
 
 button.cta {
@@ -144,10 +143,6 @@ body {
     list-style: none;
   }
   
-  .clr-gray {
-      color: var(--gray);
-  }
-  
   a {
     text-decoration: none;
   }
@@ -169,20 +164,40 @@ body {
   /* Call to Action in Navbar & Main Section */
   .cta {
     display: inline-block;
-    background: var(--purple);
     color: #fff;
     padding: 1rem 1rem;
     border-radius: .25rem;
-  }
-  
-  .indiebrewers-count, .section-two__link {
-    color: var(--purple);
   }
   
   .bg-fff {
     background: #fff;
   }
 
+  #login-body {
+    background: linear-gradient(rgb(41, 192, 215), rgb(0, 110, 255));
+  }
+
+  header#login {
+    padding-top: 1.5rem;
+  }
+
+  .forgot-password-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+  } 
+
+  #login-body main .container {
+    column-gap: 8rem;
+  }
+
+  #login-body main {
+    display: flex;
+    align-items: center;
+  }
+  
 /* FOR TABLET & SMALL SIZE LAPTOPS */
 @media (min-width: 48rem) {
     /* ================ SIGN UP PAGE STYLES ================ */
