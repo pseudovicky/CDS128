@@ -241,6 +241,7 @@ ul li .link>img {
 /* End Of Page 2 */
 #footer {
     background-color: black;
+    /* background: linear-gradient(rgb(41, 192, 215), rgb(0, 110, 255)); */
     color: #fff;
     display: flex;
     align-items: center;
@@ -256,6 +257,7 @@ ul li .link>img {
 #footerright {
     display: flex;
     gap: 30px;
+    margin-right: 100px;
 }
 
 #footer a {
