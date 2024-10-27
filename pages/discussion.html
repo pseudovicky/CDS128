@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/discussion.css">
+</head>
+
+<body>
+
+    <section class="navbar" id="navbar">
+        <div class="wrapper">
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-items nav-logo" id="nav-logo">
+                        <a href="" class="logo-link"><img src="../assets/Logo.svg" alt=""></a>
+                    </li>
+                    <li class="nav-items nav-menu_items" id="nav-items">
+                        <ul class="nav-links" id="nav-links">
+                            <li class="nav-item" id="nav-alumni">
+                                <div class="nav-item_text" id="nav-text-alumni">alumni <span id="alumni_count">
+                                        12</span>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="nav-discussion">
+                                <div class="nav-item_text" id="nav-text-discussion">Discussion Forum <span
+                                        id="open_forum">14</span></div>
+                            </li>
+                            <li class="nav-item" id="nav-referral">
+                                <div class="nav-item_text" id="nav-text-referral">Referral <span
+                                        id="total_referral">23</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-items nav-icons" id="nav-icons">
+                        <ul class="icon-list" id="icon-list">
+                            <li class="icon-item" id="icon-item">-icons</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="alumni_view">
+        <div class="wrapper">
+            <div class="filter">
+                <div class="search mt-5">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="alumni_wrapper_container">
+
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Bagus Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Bagus Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Bagus Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Bagus Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Bagus Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Omaewa Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Bagus Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+            <div class="alumni_card">
+                <div class="status">Active</div>
+                <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                <div class="alumni_name">Bagus Fikri</div>
+                <div class="alumni_regNo">904564</div>
+
+                <div class="details">
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-range">
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M16 2v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 2v4" />
+                                <path d="M17 14h-6" />
+                                <path d="M13 18H7" />
+                                <path d="M7 14h.01" />
+                                <path d="M17 18h.01" />
+                            </svg>
+                        </span>
+                        2015-2017
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-school">
+                                <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                                <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+                                <path d="M18 5v17" />
+                                <path d="m4 6 8-4 8 4" />
+                                <path d="M6 5v17" />
+                                <circle cx="12" cy="9" r="2" />
+                            </svg>
+                        </span>
+                        BTECH • CSE
+                    </div>
+                    <div class="highlighted">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trophy">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        QS senior researcher
+                    </div>
+                    <div class="label">
+                        <a href="mailto:bagusfikri@gmail.com">bagusfikri@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer">Joined at 29 Oct, 2020 • <a href="#">View details</a></div>
+            </div>
+
+        </div>
+    </section>
+    <script src="../script/discussion.js"></script>
+</body>
+
+</html>

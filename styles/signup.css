@@ -1,10 +1,10 @@
 /* ==================== SIGN UP PAGE STYLES ==================== */
 
-
 .container {
   margin: 0 auto;
   width: 80%;
   display: flex;
+  flex-direction: column;
   gap: 3rem;
 }
 p.sign-up {
@@ -119,10 +119,10 @@ body {
 
   .flex-item:nth-child(1) {
     color: #fff;
-    max-width: 31.25rem;
+    max-width: 20rem;
   }
   .flex-item:nth-child(2) {
-    max-width: 31.25rem;
+    max-width: 20rem;
   }
   
   header, main,  footer  {
