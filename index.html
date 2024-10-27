@@ -16,7 +16,7 @@
       <!-- Navbar -->
       <nav>
         <div id="nav">
-          <h1>Alumni<span>Connect</span></h1>
+          <a href="" class="logo-link"><img src="assets/Logo.svg" alt="AlumniConnect Logo"></a>
           <div id="nav-part2">
             <h4><a href="">View Mentors</a></h4>
             <h4><a href="">Career Insights</a></h4>
@@ -115,38 +115,7 @@
     <!-- footer -->
     <div id="footer">
       <div id="footerleft">
-        <!-- <section onload="startTime()">
-          <div id="txt"></div>
-          
-          <script>
-          function startTime() {
-            const today = new Date();
-            let h = today.getHours();
-            let m = today.getMinutes();
-            let s = today.getSeconds();
-            m = checkTime(m);
-            s = checkTime(s);
-            document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-            setTimeout(startTime, 1000);
-          }
-          
-          function checkTime(i) {
-            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-            return i;
-          }
-          </script>
-          
-          </section> -->
-        <!-- clock code -->
-        <!-- <h5>Sun 27 Oct 2024 &copy;</h5> -->
-        <!-- <h5><span class="hr"></span> <span class="mn"></span><span class="ss"></span>&copy;</h5> -->
-        <!-- <div class="clock"> -->
-
-          <!-- <div class="hr" style="--h:60px; --clr:red"><span></span></div>
-          <div class="mn" style="--h:80px; --clr:blue"><span></span></div>
-          <div class="ss" style="--h:100px; --clr:white"><span></span></div> -->
-
-        <h5></h5>
+        <a href="" id="footer-logo-link"><img src="assets/Logo.svg" alt="logo"></a>
       </div>
       <div id="footerright">
         <a href="https://github.com/HouseOfSpirits">github</a>
@@ -161,42 +130,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="script/script.js"></script>
-    <!-- chat bot script code -->
-    <script>
-      window.embeddedChatbotConfig = {
-      chatbotId: "kQbJltR4lYrQIjuHF71Dd",
-      domain: "www.chatbase.co"
-      }
+        <!-- chat bot script code -->
+        <script>
+          window.embeddedChatbotConfig = {
+          chatbotId: "kQbJltR4lYrQIjuHF71Dd",
+          domain: "www.chatbase.co"
+          }
+          </script>
+          <script
+          src="https://www.chatbase.co/embed.min.js"
+          chatbotId="kQbJltR4lYrQIjuHF71Dd"
+          domain="www.chatbase.co"
+          defer>
+          </script>
+
       </script>
-      <script
-      src="https://www.chatbase.co/embed.min.js"
-      chatbotId="kQbJltR4lYrQIjuHF71Dd"
-      domain="www.chatbase.co"
-      defer>
-      </script>
-
-      <!-- custom JS -->
-       <!-- clock code -->
-    <!-- <script>
-
-      function show_clock(){
-
-          let h = document.getElementsByClassName("hr")[0];
-          let m = document.getElementsByClassName("mn")[0];
-          let s = document.getElementsByClassName("ss")[0];
-
-          let date = new Date();
-
-          let hours = date.getHours();
-          let minutes = date.getMinutes();
-          let seconds = date.getSeconds();
-
-
-      }
-  
-      setInterval(show_clock, 1000); -->
-
-
-  </script>
   </body>
 </html>

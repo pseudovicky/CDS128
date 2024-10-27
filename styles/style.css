@@ -38,7 +38,6 @@ main {
 #nav h1 {
     font-weight: 700;
     font-size: 1.75rem;
-    line-height: -2;
 }
 
 #nav span {
@@ -71,9 +70,9 @@ main {
 } */
 
 
-#nav h4 a:hover {
-    color: tomato;
-    border-bottom: 2px solid tomato;
+#nav h4 a:hover, #footer a:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
 }
 
 /* Page 1 Style  */
@@ -90,11 +89,13 @@ main {
 .page1 .main-text h1 {
     text-align: left;
     font-size: 5rem;
+    line-height: 5rem;
 }
 
 .page1 .main-text p {
     text-align: left;
     font-size: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .main-text .btns-main .btn-re {
@@ -186,7 +187,9 @@ ul li .link span {
     color: rgb(0, 0, 0);
     font-size: 4rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
 
 ul li .link>img {
     mix-blend-mode: difference;
@@ -240,8 +243,7 @@ ul li .link>img {
 
 /* End Of Page 2 */
 #footer {
-    background-color: black;
-    /* background: linear-gradient(rgb(41, 192, 215), rgb(0, 110, 255)); */
+    background-color: #333333;
     color: #fff;
     display: flex;
     align-items: center;
@@ -251,13 +253,16 @@ ul li .link>img {
 
 #footerleft {
     display: flex;
-    gap: 20px;
+    gap: 8px;
+}
+
+#footerleft a {
+    text-decoration: none;
 }
 
 #footerright {
     display: flex;
     gap: 30px;
-    margin-right: 100px;
 }
 
 #footer a {
@@ -266,4 +271,8 @@ ul li .link>img {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
+}
+
+#footer #footer-logo-link:hover {
+    border-bottom: none;
 }
