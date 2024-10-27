@@ -42,3 +42,6 @@ for (let i = 0; i < link.length; i++) {
     linkImages[i].style.transform = "scale(0.8, 0.8)";
   });
 }
+
+// chatbot
+
