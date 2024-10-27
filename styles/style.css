@@ -14,6 +14,7 @@ html {
     height: 100%;
     width: 100%;
     scrollbar-width: none;
+    overflow-x: hidden;
 }
 
 main {
@@ -35,8 +36,12 @@ main {
 }
 
 #nav h1 {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.75rem;
+}
+
+#nav span {
+    font-weight: 300;
 }
 
 #nav-part2 {
@@ -96,11 +101,11 @@ main {
     margin-top: 2rem;
     margin-right: .75rem;
     border-radius: 2rem;
-    border:1px solid rgb(0, 110, 255);
+    border: 1px solid rgb(0, 110, 255);
     transition: all 0.3s ease-in-out;
 }
 
-.main-text .btns-main .btn-re a{
+.main-text .btns-main .btn-re a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.1rem;
@@ -108,72 +113,132 @@ main {
 
 .main-text .btns-main .btn-re:hover {
     background: transparent;
-    border:1px solid #fff !important;
+    border: 1px solid #fff !important;
     color: #fff;
 }
+
 .main-text .btns-main .btn-re:hover a {
     color: #fff;
 }
 
 /* Page 2 Style */
-.page2 {
-    min-height: 100vh;
-    /* width: 80%; */
-    background-color: #F1F0F5;
-    padding: 5rem 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.page2 .image2 .re-img {
-    height: 420px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 20vh;
-    width: 50%;
-    position: relative;
-}
-
-.content .blur-text h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    color: black;
-}
-
-.content .blur-text p {
-    font-size: 1.25rem;
-    color: black;
-    /* margin-bottom: 1.5rem; */
-}
-
-.content .blur-text .df-btn {
-    font-size: 1.25rem;
-    padding: .75rem 3rem;
+/* .page2 text-ft  {
+} */
+.text-ft h1{
     margin-top: 2rem;
-    border: 2px solid #000;
-    border-radius: 1.5rem;
+    padding: 2rem 6rem;
+    font-size: 4vw;
+    color: #000;
+}
+.text-ft p{
+    margin-top: -3rem;
+    padding: 2rem 6rem;
+    font-size: 1.5vw;
+    color: #000;
+}
+.text-ft img{
+    height: 20px;
 }
 
-.content .blur-text .df-btn:hover {
-    background: black;
-}
-
-.content .blur-text .df-btn a {
+a,
+a:visited,
+a:hover {
     text-decoration: none;
-    color: black;
 }
 
-.content .blur-text .df-btn:hover a {
-    color: #fff;
+li {
+    list-style: none;
 }
 
 
-#footer{
+ul {
+    padding: 2rem 6rem;
+    width: 100%;
+    /* background-color: beige; */
+}
+
+ul li {
+    border-bottom: solid #000000 .05rem;
+    position: relative;
+    z-index: 10;
+}
+
+ul li:nth-last-child(1) {
+    border-bottom: none;
+}
+
+ul li .link {
+    display: flex;
+    margin-top: -2rem;
+    padding: 3rem 0 2rem 0;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+ul li .link span {
+    display: block;
+    font-weight: 500;
+    z-index: 20;
+    mix-blend-mode: difference;
+    display: inline-block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+ul li .link>img {
+    mix-blend-mode: difference;
+    z-index: 15;
+
+}
+
+
+.hover-reveal {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .5s ease-out;
+}
+
+.hover-reveal img {
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    position: relative;
+    transition: transform .4s ease-out;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        width: 93%;
+    }
+
+    nav ul li a span {
+        font-size: 2.5rem;
+    }
+
+    nav ul li a>img {
+        height: 18px;
+    }
+
+    .hover-reveal {
+        width: 220px;
+        height: 300px;
+    }
+}
+
+/* End Of Page 2 */
+#footer {
     background-color: black;
     color: #fff;
     display: flex;
@@ -182,17 +247,17 @@ main {
     padding: 40px 30px;
 }
 
-#footerleft{
+#footerleft {
     display: flex;
     gap: 20px;
 }
 
-#footerright{
+#footerright {
     display: flex;
     gap: 30px;
 }
 
-#footer a{
+#footer a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
