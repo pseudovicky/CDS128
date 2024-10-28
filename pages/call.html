@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Call</title>
+  <link rel="stylesheet" href="../styles/call.css">
+</head>
+<body>
+  <div class="video-container">
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay><link rel="stylesheet" href=""></video>
+  </div>
+  <div class="controls">
+    <button  CLASS ="CLICK" onclick="startCall()">Start Call</button>
+    <button class="click2" onclick="endCall()">End Call</button>
+  </div>
+
+  <div class="input-container">
+    <label for="meeting-link">Enter Meeting Link:</label><br>
+    <input
+      type="url"
+      id="meeting-link"
+      placeholder="https://alumniconnect/8080"
+      required
+    />
+  </div>
+
+  <script src="../script/call.js"></script>
+</body>
+</html>
