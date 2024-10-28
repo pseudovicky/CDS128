@@ -258,6 +258,7 @@ ul li .link>img {
 }
 
 #footerright {
+    margin-right: 4rem;
     display: flex;
     gap: 30px;
 }
